@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Carrot Farm - A game for learning CSS grid layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Carrot Farm">
+    <meta property="og:description" content="A game for learning CSS grid layout">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans|Autour+One|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section id="sidebar">
+        <div class="header">
+            <div>
+                <h1 class="title">Carrot Farm</h1>
+            </div>
+            <div id="level-counter">
+                <span class="arrow left">◀</span>
+                <span id="level-indicator">
+                <span id="labelLevel" class="translate">Level</span>
+                <span class="current">1</span>
+                <span id="labelOf" class="translate">of</span>
+                <span class="total">1</span>
+                <span class="caret">▾</span>
+                </span>
+                <span class="arrow right">▶</span>
+                <div id="levelsWrapper" class="tooltip">
+                    <div id="levels"></div>
+                    <div id="labelReset" class="translate">Reset</div>
+                </div>
+            </div>
+        </div>
+        <p id="instructions"></p>
+        <div id="editor">
+            <div id="css">
+                <pre id="before"></pre>
+                <textarea id="code" autofocus autocapitalize="none"></textarea>
+                <pre id="after"></pre>
+            </div>
+            <button id="next" class="translate">Well Done! You are now qualified to go to the next level.</button>
+        </div>
+        <div class="credits">
+            <span id="language">
+            <span id="languageActive" class="toggle translate">English</span>
+            <span class="tooltip">
+                    <a href="#en">English</a>
+                    <a href="#no">Norsk</a>
+              </span>
+            </span>
+        </div>
+    </section>
+    <section id="view">
+        <div id="board">
+            <div id="overlay">
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+            </div>
+            <div id="plants"></div>
+            <div id="garden"></div>
+            <div id="soil">
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+                <span class="plot"></span>
+            </div>
+        </div>
+    </section>
+    <script language="JavaScript" type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/levels.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/docs.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/messages.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/game.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-23019901-18', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
