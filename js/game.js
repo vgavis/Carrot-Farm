@@ -245,7 +245,6 @@ var game = {
     check: function() {
         game.applyStyles();
         var level = levels[game.level];
-        var plants = {};
         var treatments = {};
         var correct = true;
         $('.treatment').each(function() {
