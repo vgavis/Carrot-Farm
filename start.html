@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Carrot Farm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="http://cssgridgarden.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Carrot Farm">
+    <meta property="og:description" content="A fun game to learn programming">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans|Autour+One|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .title {
+            margin: 0.5rem 0 0;
+            text-transform: uppercase;
+            font-family: 'Autour One', cursive;
+            font-size: 60px;
+        }
+        
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+        .next {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 1em;
+            text-decoration: none;
+            background-size: cover;
+        }
+        
+        .next div {
+            display: flex;
+            height: 1000%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .next button {
+            color: rgba(255, 255, 255, 0.8);
+            font-family: 'Autour One', cursive;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 60px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+        .next button:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="SplashScreen">
+        <div class="center">
+            <h1 class="title">Welcome to Carrot Farm</h1>
+            <h2 class="body">In this game you will learn to code. The programming language you will learn is Cascading Style Sheets (CSS). This language is used to design websites. By learning CSS you will also learn some basic skills needed to be a programmer.
+            </h2>
+            <h2 class="body">In this game, you will be tending a carrot garden, and by writing code in CSS you will be able to water the carrots so they will grow.</h2>
+            <h3 class="body">Note to teacher or parent: this game is for children at the age of 10 and up. If the child is stuck on one of the levels try explaining to them what they need to do without telling them the answer.</h3>
+            <div class="next">
+                <button onclick="location.href='index.html'">Start</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
